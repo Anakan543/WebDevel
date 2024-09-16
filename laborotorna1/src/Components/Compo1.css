@@ -1,0 +1,19 @@
+h1{
+    color: red;
+}
+.CompoDiv{
+    border: black 2px solid;
+    border-radius: 15px;
+    padding: 0 10px;
+}
+.Compo2Div{
+    display: flex;
+    justify-content: center;
+    border-radius: 15px;
+    padding: 10px 0;
+    margin: 5px;
+}
+
+.Compo2Div>*{
+    margin: 5px;
+}
