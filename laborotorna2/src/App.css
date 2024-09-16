@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  color: white;
+  font-size: 16px;
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(74, 40, 0, 1) 100%
+  );
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+header {
+  padding: 50px 0;
+}
+.container {
+  width: 1400px;
+  margin: 0 auto;
+}
+header ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+header nav ul li {
+  display: inline-block;
+}
+header nav ul li a {
+  color: whitesmoke;
+  margin: 0 35px;
+  font-size: 20px;
+  text-decoration: none;
+}
+header nav ul li:not(.active) a:not(.checkboxA):hover {
+  border-bottom: 3px solid hsl(31, 100%, 43%);
+}
+.userCheck {
+  padding: 5px 0px;
+  margin-right: 8px;
+  border-radius: 5px;
+  border: 2px solid #dc7000;
+  transition: all 500ms ease;
+}
+
+.userCheck:hover {
+  box-shadow: 0px 0px 10px 4px #f0a67e;
+  cursor: pointer;
+}
+header nav ul li.active {
+  background-color: #fa9021;
+  padding: 5px 12px;
+  border-radius: 5px;
+  transition: all 500ms ease;
+  box-shadow: 0px 0px 10px 4px #dc7000;
+}
+header nav ul li.active:hover {
+  background-color: #f0a67e;
+  box-shadow: 0px 0px 10px 4px #f0a67e;
+  cursor: pointer;
+}
+
+.blockTest {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.test {
+  padding: 40px;
+  background-color: rgb(29, 40, 40);
+  margin: 5px;
+  width: 400px;
+}
+footer {
+  background-color: black;
+  padding: 35px 0;
+}
+footer .container div {
+  display: flex;
+  width: 300px;
+  margin: 0 auto;
+  flex-direction: column;
+  align-items: center;
+}
+footer .container div * {
+  margin: 5px 0;
+}
+/*footer .blocks p{
+  width: 300px;
+  margin: 15px 0;
+}*/
+footer .block h4 {
+  font-weight: 500;
+  font-size: 17px;
+}
+/*footer hr{
+  margin: 30px 0;
+  border: 0;
+  height: 0.6px;
+  background-color: #ccc;
+}*/
+footer > p {
+  text-align: center;
+}
+/*тимчасово*/
+
+form {
+  height: 600px;
+}
+.checkbox {
+  display: flex;
+}
+.checkbox * {
+  margin: 5px 10px;
+  font-size: 23px;
+}
+.selectedItems {
+  padding-left: 50px;
+  font-size: 24px;
+}
