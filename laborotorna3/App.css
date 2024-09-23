@@ -1,0 +1,304 @@
+/*@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+*/
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+ /* font-family: "Poppins", sans-serif;
+  font-weight: 400;*/
+  font-family: "Exo 2", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  color: white;
+  font-size: 16px;
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(74, 40, 0, 1) 100%
+  );
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+header {
+  display: flex;
+  padding: 50px 0;
+  justify-content: space-between;
+
+}
+.container {
+  width: 1400px;
+  margin: 0 auto;
+}
+header ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+header nav ul li {
+  display: inline-block;
+}
+header nav ul li a {
+  color: whitesmoke;
+  margin: 0 35px;
+  font-size: 20px;
+  text-decoration: none;
+}
+header nav ul li:not(.active) a:not(.checkboxA):hover {
+  border-bottom: 3px solid hsl(31, 100%, 43%);
+}
+.userCheck, .buttonDiv button {
+  font-family: "Exo 2", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  background-color: #ee950e;
+  padding: 4px 16px;
+  border-radius: 5px;
+  border: none;
+  transition: all 800ms ease;
+  color: whitesmoke;
+  bottom: 5px;
+  font-size: 20px;
+}
+
+.userCheck:hover, .buttonDiv button:hover {
+  background-color: #f0a67e;
+  box-shadow: 0px 0px 10px 4px #f0a67e;
+  cursor: pointer;
+}
+header nav ul li.active {
+  background-color: #fa9021;
+  padding: 5px 0px;
+  border-radius: 5px;
+  transition: all 500ms ease;
+  box-shadow: 0px 0px 10px 4px #dc7000;
+}
+header nav ul li.active:hover {
+  background-color: #f0a67e;
+  box-shadow: 0px 0px 10px 4px #f0a67e;
+  cursor: pointer;
+}
+
+.blockTest {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.test {
+  padding: 40px;
+  background-color: rgb(29, 40, 40);
+  margin: 5px;
+  width: 400px;
+}
+footer {
+  background-color: black;
+  padding: 35px 0;
+}
+footer .container div {
+  display: flex;
+  width: 300px;
+  margin: 0 auto;
+  flex-direction: column;
+  align-items: center;
+}
+footer .container div * {
+  margin: 5px 0;
+}
+/*footer .blocks p{
+  width: 300px;
+  margin: 15px 0;
+}*/
+footer .block h4 {
+  font-weight: 500;
+  font-size: 17px;
+}
+/*footer hr{
+  margin: 30px 0;
+  border: 0;
+  height: 0.6px;
+  background-color: #ccc;
+}*/
+footer > p {
+  text-align: center;
+}
+/*тимчасово*/
+
+.form {
+  height: 300px;
+}
+.checkbox {
+  display: flex;
+}
+.checkbox * {
+  margin: 5px 10px;
+  font-size: 23px;
+}
+.selectedItems {
+  padding-left: 50px;
+  font-size: 24px;
+}
+.Modal{
+  display: flex;
+  flex-direction: column;
+}
+.Modal *{
+  margin: 5px;
+  font-size: 28px;
+}
+.ModalDiv{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 50px;
+  margin-bottom: 20px;
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(74, 40, 0, 1) 100%
+  );
+}
+.buttonDiv{
+  display: flex;
+    justify-content: space-evenly;
+}
+.buttonDiv button {
+  margin-top: 10px;
+}
+.buttonDiv button a{
+  text-decoration: none;
+  color: aliceblue;
+}
+.BackgroundClick{
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 98.9vw;
+  height: 100vh;
+  z-index: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+.itemShops h1{
+  width: 100%;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.itemShops{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+/*КАРТОЧКИ*/
+.product-item {
+  border-radius: 10px;
+  width: 300px;
+  text-align: center;
+  margin: 0 auto;
+  border-bottom: 2px solid #F5F5F5;
+  background: #14094e;
+  font-family: "Open Sans";
+  transition: .3s ease-in;
+}
+.product-item:hover {
+  border-bottom: 2px solid #fc5a5a;
+}
+.product-item img {
+  display: block;
+  width: 100%;
+}
+.product-list {
+  padding: 15px 0;
+}
+.product-list h3 {
+  font-size: 18px;
+  font-weight: 400;
+  color: #fc5a5a;
+  margin: 0 0 10px 0;
+}
+.price {
+  font-size: 16px;
+  color: #fc5a5a;
+  display: block;
+  margin-bottom: 12px;
+}
+.button, .infoItem button {
+  text-decoration: none;
+  display: inline-block;
+  padding: 0 12px;
+  background: #cccccc;
+  color: white;
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 28px;
+  transition: .3s ease-in;
+  border: none;
+}
+.product-item:hover .button , .infoItem button:hover {
+  background: #fc5a5a;
+  cursor: pointer;
+}
+
+.divItem{
+  display: flex;
+}
+div.picture{
+  width: 50%;
+}
+div.infoItem{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+div.description{
+  text-align: left;
+}
+div.infoItem *{
+  margin: 10px;
+}
+form.comments{
+  display: flex;
+}
+form.comments button{
+  background-color:#fc5a5a;
+  width: 100px;
+  height: 50px;
+  border: none;
+  border-radius: 10px;
+  color: whitesmoke;
+  padding: 5px 15px;
+  margin-left: 10px;
+}
+form.comments button:hover{
+  cursor: pointer;
+}
+li.comment{
+  display: block;
+  text-align: left;
+  background-color: rgba(74, 40, 0, 1);
+  margin: 5px;
+  width: auto;
+  padding: 5px;
+  border-radius: 15px;
+}
+.currencyConverter{
+  text-align: center;
+}
+.currencyConverter form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.currencyConverter form *{
+  margin-bottom: 8px;
+}
+.dollarInput{
+  background-color: whitesmoke;
+}
